@@ -281,59 +281,59 @@ The space complexity of the top-down solution comes from the size of the memo ta
 
 ## Quiz Questions about dynamic programming
 1. What is the primary purpose of dynamic programming in problem-solving?
-a) Divide and conquer
-b) Optimization
-c) Backtracking
-d) Greedy algorithms
-B
+- a) Divide and conquer
+- b) Optimization
+- c) Backtracking
+- d) Greedy algorithms
+- B
 2. Which of the following is NOT a key characteristic of dynamic programming problems?
-a) Overlapping subproblems
-b) Optimal substructure
-c) Greedy choice property
-d) Memoization
-C
+- a) Overlapping subproblems
+- b) Optimal substructure
+- c) Greedy choice property
+- d) Memoization
+- C
 3. What is the technique used to store solutions of subproblems in dynamic programming called?
-a) Caching
-b) Tabulation
-c) Memoization
-d) Serialization
-C
+- a) Caching
+- b) Tabulation
+- c) Memoization
+- d) Serialization
+- C
 4. In the context of dynamic programming, what does the term "bottom-up approach" refer to?
-a) Solving larger subproblems before smaller ones
-b) Solving smaller subproblems before larger ones
-c) Starting from the middle of a problem and expanding outward
-d) None of the above
-B
+- a) Solving larger subproblems before smaller ones
+- b) Solving smaller subproblems before larger ones
+- c) Starting from the middle of a problem and expanding outward
+- d) None of the above
+- B
 5. What is the primary difference between dynamic programming and recursive approaches to solving problems?
-a) Dynamic programming is always faster than recursion
-b) Dynamic programming does not use recursion
-c) Dynamic programming avoids redundant calculations by reusing previously computed results
-d) Dynamic programming only works on optimization problems
-C
+- a) Dynamic programming is always faster than recursion
+- b) Dynamic programming does not use recursion
+- c) Dynamic programming avoids redundant calculations by reusing previously computed results
+- d) Dynamic programming only works on optimization problems
+- C
 6. In the context of dynamic programming, what does the term "state" refer to?
-a) The current position in the problem space
-b) The set of variables that define a subproblem
-c) The current value of the objective function
-d) The optimal solution to a problem
-B
+- a) The current position in the problem space
+- b) The set of variables that define a subproblem
+- c) The current value of the objective function
+- d) The optimal solution to a problem
+- B
 7. What is the time complexity of the Fibonacci sequence when solved using dynamic programming with memoization?
-a) O(2^n)
-b) O(n^2)
-c) O(n)
-d) O(log n)
-C
+- a) O(2^n)
+- b) O(n^2)
+- c) O(n)
+- d) O(log n)
+- C
 8. What is the primary difference between the top-down and bottom-up approaches in dynamic programming?
-a) Top-down starts by solving smaller subproblems, while bottom-up starts by solving larger subproblems
-b) Top-down starts by solving larger subproblems, while bottom-up starts by solving smaller subproblems
-c) Top-down uses memoization, while bottom-up uses tabulation
-d) Top-down uses tabulation, while bottom-up uses memoization
-C
+- a) Top-down starts by solving smaller subproblems, while bottom-up starts by solving larger subproblems
+- b) Top-down starts by solving larger subproblems, while bottom-up starts by solving smaller subproblems
+- c) Top-down uses memoization, while bottom-up uses tabulation
+- d) Top-down uses tabulation, while bottom-up uses memoization
+- C
 9. In the context of dynamic programming, which technique is used to build a solution iteratively, without using recursion?
-a) Memoization
-b) Tabulation
-c) Iterative deepening
-d) Branch and bound
-B
+- a) Memoization
+- b) Tabulation
+- c) Iterative deepening
+- d) Branch and bound
+- B
 10. Consider the following 0/1 Knapsack problem: You are given a list of items with their respective weights and values, and a knapsack with a maximum weight capacity. The items can only be taken in their entirety or not taken at all. What is the maximum value that can be obtained from the given items without exceeding the knapsack's weight limit?
 Items:
 
@@ -346,11 +346,11 @@ Items:
 
     Knapsack maximum weight capacity: 80 kg
 
-    a) 420 USD
-    b) 440 USD
-    c) 460 USD
-    d) 480 USD
-    D
+  - a) 420 USD
+  - b) 440 USD
+  - c) 460 USD
+  - d) 480 USD
+  - D
 
 
 
