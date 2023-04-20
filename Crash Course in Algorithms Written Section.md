@@ -337,12 +337,12 @@ The space complexity of the top-down solution comes from the size of the memo ta
 10. Consider the following 0/1 Knapsack problem: You are given a list of items with their respective weights and values, and a knapsack with a maximum weight capacity. The items can only be taken in their entirety or not taken at all. What is the maximum value that can be obtained from the given items without exceeding the knapsack's weight limit?
 Items:
 
-    Weight: 10 kg, Value: 60 USD
-    Weight: 20 kg, Value: 240 USD
-    Weight: 30 kg, Value: 100 USD
-    Weight: 40 kg, Value: 140 USD
-    Weight: 50 kg, Value: 200 USD
-    Weight: 60 kg, Value: 240 USD
+    Weight: 10 kg, Value: 60 USD<br/>
+    Weight: 20 kg, Value: 240 USD<br/>
+    Weight: 30 kg, Value: 100 USD<br/>
+    Weight: 40 kg, Value: 140 USD<br/>
+    Weight: 50 kg, Value: 200 USD<br/>
+    Weight: 60 kg, Value: 240 USD<br/>
 
     Knapsack maximum weight capacity: 80 kg
 
