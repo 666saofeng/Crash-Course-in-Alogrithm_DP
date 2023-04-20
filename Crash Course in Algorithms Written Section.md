@@ -145,7 +145,25 @@ def fib_tabulation(n):
 n = 10  # Desired Fibonacci number
 print(fib_tabulation(n))
 ```
+Here's a Java implementation using tabulation:
 
+```java 
+public static long fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        }
+
+        long[] fib = new long[n + 1];
+        fib[0] = 0;
+        fib[1] = 1;
+
+        for (int i = 2; i <= n; i++) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+        }
+
+        return fib[n];
+    }
+  ```
 #### Time and Space Complexity
 1. Memoization (Top-Down) 
 - Time complexity: The time complexity of the memoized Fibonacci solution is O(n). This is because each Fibonacci number is calculated once and stored in the memo dictionary. The function is called for each number from 2 to n, making n-1 calls, but it performs a constant amount of work for each call (looking up in the memo dictionary), which results in a linear time complexity.
@@ -199,7 +217,24 @@ Constraints:
 `text1` and `text2` consist of only lowercase English characters.
 
 #### Analysis
+ 1. The Longest Common Subsequence problem can be formally identified as a dynamic programming problem based on the following criteria:
 
+   (1) Overlapping Subproblems: The problem exhibits a property where it can be decomposed into smaller subproblems. Additionally, these smaller subproblems are repeatedly solved during the process of solving the main problem. The presence of overlapping subproblems is an indication that the problem is a suitable candidate for dynamic programming.
+In the context of the Longest Common Subsequence problem, the main problem involves determining the longest common subsequence for a pair of strings. This problem can be divided into subproblems that deal with smaller portions of the input strings. Due to the structure of the problem, there is a high likelihood that the same subproblems are encountered multiple times.
+
+   (2) Optimal Substructure: The problem demonstrates a characteristic where an optimal solution to the main problem can be derived by combining optimal solutions to its subproblems. This property enables the application of dynamic programming techniques to efficiently solve the problem
+
+2. Subproblems:
+Let us consider two strings, text1 and text2, of length m and n, respectively. A subproblem can be defined as finding the longest common subsequence between two smaller substrings, text1[0...i-1] and text2[0...j-1], where i and j are the current positions in text1 and text2, respectively. The subproblems involve determining the longest common subsequence for all possible combinations of substrings formed by varying the indices i and j from 0 to m and 0 to n, respectively.
+
+3. Recursive Relations:
+Let L(i, j) denote the length of the longest common subsequence between text1[0...i-1] and text2[0...j-1]. The recursive relations can be derived based on the comparison of the characters at positions i-1 and j-1 in text1 and text2, respectively.
+
+Base Case: If either i = 0 or j = 0, L(i, j) = 0. This is because the longest common subsequence between an empty string and any other string is always 0.
+
+Case 1: If text1[i-1] == text2[j-1], the characters at the current positions match. In this case, the optimal solution should include this match and the optimal solution for the remaining parts of the strings. Thus, the recursive relation is given by L(i, j) = L(i-1, j-1) + 1.
+
+Case 2: If text1[i-1] != text2[j-1], the characters at the current positions do not match. In this case, the optimal solution is determined by taking the maximum of the optimal solutions found when excluding one of the characters. Therefore, the recursive relation is given by L(i, j) = max(L(i-1, j), L(i, j-1)).
 #### Top-down approach with memoization
   In this solution, we use a helper function lcs_helper that takes the two strings, their current lengths m and n, and a memo table to store the results of previously computed subproblems. The function first checks if either string is empty, in which case the longest common subsequence is 0. If the result has been previously calculated, it returns the memoized value. Otherwise, it calculates the result using recursion and stores it in the memo table.
  ```python
